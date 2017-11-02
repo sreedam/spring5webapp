@@ -68,16 +68,20 @@ public class Author {
 
     @Override
     public int hashCode() {
-        return id.hashCode();
+        return id != null ? id.hashCode() : 0;
     }
-
-    @Override
-    public String toString() {
-        return "Author{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", books=" + books +
-                '}';
-    }
+//    @Override
+//    public int hashCode() {
+//        return id.hashCode();
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Author{" +
+//                "id=" + id +
+//                ", firstName='" + firstName + '\'' +
+//                ", lastName='" + lastName + '\'' +
+//                ", books=" + books +
+//                '}';
+//    }
 }
